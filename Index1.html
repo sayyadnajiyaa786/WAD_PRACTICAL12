@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .sidebar {
+      width: 200px;
+      height: 100vh;
+      background-color: #333;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 20px;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 15px;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      background-color: #575757;
+    }
+
+    .main-content {
+      margin-left: 200px;
+      padding: 20px;
+    }
+
+    .header {
+      background-color: #fff;
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>My Dashboard</h2>
+    <a href="#">Home</a>
+    <a href="#">Analytics</a>
+    <a href="#">Settings</a>
+    <a href="#">Profile</a>
+    <a href="#">Logout</a>
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+      <h1>Dashboard Overview</h1>
+    </div>
+
+    <div class="card">
+      <h3>Statistics</h3>
+      <p>Visitors: 1,234</p>
+      <p>Sales: 567</p>
+    </div>
+
+    <div class="card">
+      <h3>Recent Activity</h3>
+      <ul>
+        <li>Login from new device</li>
+        <li>Password changed</li>
+        <li>Profile updated</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
